@@ -1,9 +1,9 @@
-# _Your project title_
+# _Scala, a modern Functional and OOP language_
 
 - Andrew Dale
 - andrew.dale@uoit.net
 
-## About the language
+## _Brief synopsis of the language_
 
 > _Describe the language_
 >
