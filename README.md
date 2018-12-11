@@ -5,7 +5,7 @@
 
 ## _Brief synopsis of the language_
 
-> _Describe the language_
+> _Scala Basics_
 >
 > - History
 > - Some interesting features
