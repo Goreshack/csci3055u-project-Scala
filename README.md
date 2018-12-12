@@ -15,10 +15,12 @@
 > Lexical Scoping
 ## About the syntax
 
-> _code snippet_
+> Specifically, Scala does not have a "let" form
+> _Similar to Java, Scala must have a main definition to run_
 
-Specifically, Scala does not have a "let" form
-
+> _# Eg main(args: Array[String]) {
+	println("Hello World")
+}
 
 > A simple 'foreach' loop:
 
@@ -26,27 +28,52 @@ Specifically, Scala does not have a "let" form
 for(i <- List.range(0, 10, 1)){
 	if(i % 2 == 0){
 		println("Even")
-}	else{
+	}else{
 		println("Odd")
-}
+	}
 }
 ```
-## About the tools
+## Tools of the Trade
 
 > Scala can be developed in a multitude of ways, most commonly in IntelliJ IDEA
 > Or similarly can be developed on the command line via text-editors such as VIM> 
 > Either way, the project manager SBT is used to manage larger scala projects
 > Unfortunately however, it would seem that SBT (at least in my personal experience) is oft convoluted and doesn't feel great to use
 
-## About the standard library
-
-> _Give some examples of the functions and data structures
-> offered by the standard library_.
-
+## The Standard Library
 
 > Given that Scala is built upon the JVM, almost all functionality is cross-compatible with Scala (as in Java -> Scala)
 > This includes standard .Math etc etc. 
 
+> _For Example from Scalas documents (@ https://www.scala-lang.org/api/current/)_
+> Mathematical Constants:
+```scala
+val E: Double(2.718281828459045)
+val Pi: Double(3.141592653589793)
+```
+
+> Scalas standard library is pretty -- and intuitive.
+> We can utilize the standard math lib to find min and max of {type}
+
+_E.g._
+
+```scala
+def max(x: {type}, y: {type}): {type}
+def min(x: {type}, y: {type}): {type}
+
+// Ceiling and Floor Functionality
+def ceil(x: Double): Double
+def floor(x: Double): Double
+
+Amongst others, including, exp, log, round, trig functions etc.
+```
+
+> Even more interesting, at least in my opinion, Scalas math lib also includes a conversion between radians and degrees.
+> The standard library (as it is shared with Java) also contains sorting implementations for {type}
+> E.g. quicksort, stablesort
+```scala
+def quickSort(a: Array[Int]): Unit
+```
 ## About open source library
 
 > Scala has a multitude of open-source libraries available, the two in particular that I found interesting were Breeze and Vegas (two data visualization libraries) to help bridge the gap for burgeoning data scientists with an interest in Scala. 
