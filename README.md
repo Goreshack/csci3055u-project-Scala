@@ -6,13 +6,13 @@
 ## _Brief synopsis of the language_
 
 > _Scala Basics_
->
-> Scala is a general-purpose programming language which also supports functional programming --> The language is multi-paradigm. The language was designed to address criticisms of Java -- the language on which it is built. 
-> The language first appeared in January of 2004, almost 15 years ago. 
-> Developed at the Programming Methods Laboratory of École Polytechnique Fédérale de Lausanne
-> The language's typing discipline is static, strong, inferred and structual. 
-> Utilizes .scala and .sc filetypes
-> Lexical Scoping
+> Markup : *Scala is a general-purpose programming language which also supports functional programming --> The language is multi-paradigm
+	  *The language was designed to address criticisms of Java -- the language on which it is built. 
+	  *The language first appeared in January of 2004, almost 15 years ago. 
+	  *Developed at the Programming Methods Laboratory of École Polytechnique Fédérale de Lausanne
+	  *The language's typing discipline is static, strong, inferred and structual. 
+	  *Utilizes .scala and .sc filetypes
+	  *Lexical Scoping
 ## About the syntax
 
 > Specifically, Scala does not have a "let" form
