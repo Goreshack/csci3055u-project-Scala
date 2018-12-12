@@ -45,9 +45,10 @@ for(i <- List.range(0, 10, 1)){
 _scala> (can also be {projectname}>_ which allows one to input certain commands,
 such as ~run/run which will build the project along and compile it.
 > One can also pull a sbt template utilizing the command:
-_scala> sbt new scala/{templatename}.g8_  for my project I utilized;
-_scala> sbt new scala/scala-seed.g8_ which creates the directories, build file (build.sbt) etc.
-
+```
+_scala> sbt new scala/{templatename}.g8_ // for my project I utilized;
+_scala> sbt new scala/scala-seed.g8_ // which creates the directories, build file (build.sbt) etc.
+```
 > Unfortunately however, it would seem that SBT (at least in my limited personal experience) is oft convoluted and doesn't feel great to use -- read: often feels clunky. Especially in comparison to Leiningen. 
 
 ## The Standard Library
