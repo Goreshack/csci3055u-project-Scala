@@ -36,9 +36,18 @@ for(i <- List.range(0, 10, 1)){
 ## Tools of the Trade
 
 > Scala can be developed in a multitude of ways, most commonly in IntelliJ IDEA
-> Or similarly can be developed on the command line via text-editors such as VIM> 
+
+> Or similarly can be developed on the command line via text-editors such as VIM
+
 > Either way, the project manager SBT is used to manage larger scala projects
-> Unfortunately however, it would seem that SBT (at least in my personal experience) is oft convoluted and doesn't feel great to use
+> Utilizing from the command line, SBT is rather (read: isn't) straight-forward. 
+_scala> (can also be {projectname}>_ which allows one to input certain commands,
+such as ~run/run which will build the project along and compile it.
+> One can also pull a sbt template utilizing the command:
+_scala> sbt new scala/{templatename}.g8_  for my project I utilized;
+_scala> sbt new scala/scala-seed.g8_ which creates the directories, build file (build.sbt) etc.
+
+> Unfortunately however, it would seem that SBT (at least in my limited personal experience) is oft convoluted and doesn't feel great to use -- read: often feels clunky. Especially in comparison to Leiningen. 
 
 ## The Standard Library
 
@@ -78,6 +87,25 @@ def quickSort(a: Array[Int]): Unit
 
 > Scala has a multitude of open-source libraries available, the two in particular that I found interesting were Breeze and Vegas (two data visualization libraries) to help bridge the gap for burgeoning data scientists with an interest in Scala. 
 > Vegas is touted as the Matplotlib for Scala and whilst this may have been true, a lack of updates and contributions have let the project fall to the way-side lacking support for the newest updates of Scala itself. 
+_#Breeze Example_
+> Upon importing the required dependencies, we can plot data (and also subsequently save it).
+```scala
+import breeze.plot._
+// For my own project I used the standard scala io
+// Once we have our data into some sort of container, array/list etc
+// We can now plot x vs y
+// For this example we'll forego typical Scala practice
+val f = Figure()
+val Plot = f.subplot(0)
+
+Plot.title = "Yahoo Financial Data"
+Plot.xlabel = "Days"
+Plot.ylabel = "$ Value"
+Plot += plot(days, highInt)
+Plot += plot(days, lowInt)
+
+f.refresh()
+```
 # Analysis of the language
 
 > _I'll be honest, I'm not particularly a fan of the language after a brief period of use, albeit that could certainly change over time_
