@@ -9,17 +9,17 @@
 
 * Scala is a general-purpose programming language which also supports functional programming --> The language is multi-paradigm
 * The language was designed to address criticisms of Java -- the language on which it is built. 
-* The language first appeared in January of 2004, almost 15 years ago. 
-* Developed at the Programming Methods Laboratory of École Polytechnique Fédérale de Lausanne
+* The language first appeared in January of 2004, almost #15 years ago#. 
+* Developed at the _Programming Methods Laboratory of École Polytechnique Fédérale de Lausanne_
 * The language's typing discipline is static, strong, inferred and structual. 
 * Utilizes .scala and .sc filetypes
 * Lexical Scoping
-## About the syntax
+## Syntactic Excellence
 
 > Specifically, Scala does not have a "let" form
 > _Similar to Java, Scala must have a main definition to run_
 
-> _# Eg main(args: Array[String]) {
+>  #_Eg_# main(args: Array[String]) {
 	println("Hello World")
 }
 
