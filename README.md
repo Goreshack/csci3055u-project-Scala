@@ -19,10 +19,12 @@
 > Specifically, Scala does not have a "let" form
 > _Similar to Java, Scala must have a main definition to run_
 
->  #_Eg_# main(args: Array[String]) {
+>  #_Eg_
+```
+main(args: Array[String]) {
 	println("Hello World")
 }
-
+```
 > A simple 'foreach' loop:
 
 ```scala
